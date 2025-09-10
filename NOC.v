@@ -729,7 +729,7 @@ module noc_wrapper(
     .group434_in_data(group434_in_data),
     .group434_in_valid(group434_in_valid),
     
-极 group534_out_data(group534_out_data),
+    .group534_out_data(group534_out_data),
     .group534_out_valid(group534_out_valid),
     .group534_in_data(group534_in_data),
     .group534_in_valid(group534_in_valid),
@@ -746,7 +746,7 @@ module noc_wrapper(
     
     .group834_out_data(group834_out_data),
     .group834_out_valid(group834_out_valid),
-   极 group834_in_data(group834_in_data),
+    .group834_in_data(group834_in_data),
     .group834_in_valid(group834_in_valid)
   );
 
@@ -804,11 +804,11 @@ module noc_wrapper(
     .group432_out_data(group432_in_data),
     .group432_out_valid(group432_in_valid),
     .group432_in_data(group432_out_data),
-    .极 group432_in_valid(group432_out_valid),
+    .group432_in_valid(group432_out_valid),
     
     .group542_out_data(group542_out_data),
     .group542_out_valid(group542_out_valid),
-    .group542极_data(group542_in_data),
+    .group542_data(group542_in_data),
     .group542_in_valid(group542_in_valid),
     
     .group642_out_data(group642_out_data),
@@ -864,7 +864,7 @@ module noc_wrapper(
     
     // Spine 4 group ports
     .group414_out_data(group414_in_data),
-    .极 group414_out_valid(group414_in_valid),
+    .group414_out_valid(group414_in_valid),
     .group414_in_data(group414_out_data),
     .group414_in_valid(group414_out_valid),
     
@@ -911,7 +911,7 @@ module noc_wrapper(
     
     .group521_out_data(group521_in_data),
     .group521_out_valid(group521_in_valid),
-    .group521极_data(group521_out_data),
+    .group521_data(group521_out_data),
     .group521_in_valid(group521_out_valid),
     
     .group531_out_data(group531_in_data),
@@ -1076,7 +1076,7 @@ module noc_wrapper(
     .group651_out_data(group651_in_data),
     .group651_out_valid(group651_in_valid),
     .group651_in_data(group651_out_data),
-    .group651_in_valid(group极_out_valid),
+    .group651_in_valid(group651_out_valid),
     
     .group761_out_data(group761_out_data),
     .group761_out_valid(group761_out_valid),
@@ -1092,14 +1092,14 @@ module noc_wrapper(
     .group612_out_data(group612_in_data),
     .group612_out_valid(group612_in_valid),
     .group612_in_data(group612_out_data),
-    .group612极_valid(group612_out_valid),
+    .group612_valid(group612_out_valid),
     
     .group622_out_data(group622_in_data),
     .group622_out_valid(group622_in_valid),
     .group622_in_data(group622_out_data),
     .group622_in_valid(group622_out_valid),
     
-    .group632_out_data(group极_in_data),
+    .group632_out_data(group632_in_data),
     .group632_out_valid(group632_in_valid),
     .group632_in_data(group632_out_data),
     .group632_in_valid(group632_out_valid),
@@ -1142,7 +1142,7 @@ module noc_wrapper(
     
     .group643_out_data(group643_in_data),
     .group643_out_valid(group643_in_valid),
-    .group643极_data(group643_out_data),
+    .group643_data(group643_out_data),
     .group643_in_valid(group643_out_valid),
     
     .group653_out_data(group653_in_data),
@@ -1276,12 +1276,12 @@ module noc_wrapper(
     // Spine 3 group ports
     .group713_out_data(group713_in_data),
     .group713_out_valid(group713_in_valid),
-    .group713极_data(group713_out_data),
+    .group713_data(group713_out_data),
     .group713_in_valid(group713_out_valid),
     
     .group723_out_data(group723_in_data),
     .group723_out_valid(group723_in_valid),
-    .极 group723_in_data(group723_out_data),
+    .group723_in_data(group723_out_data),
     .group723_in_valid(group723_out_valid),
     
     .group733_out_data(group733_in_data),
@@ -1304,7 +1304,7 @@ module noc_wrapper(
     .group763_in_data(group763_out_data),
     .group763_in_valid(group763_out_valid),
     
-    .group873_out_data(group873_out极),
+    .group873_out_data(group873_out_data),
     .group873_out_valid(group873_out_valid),
     .group873_in_data(group873_in_data),
     .group873_in_valid(group873_in_valid),
@@ -1436,14 +1436,14 @@ module noc_wrapper(
     .group833_out_data(group833_in_data),
     .group833_out_valid(group833_in_valid),
     .group833_in_data(group833_out_data),
-    .group833极_valid(group833_out_valid),
+    .group833_valid(group833_out_valid),
     
     .group843_out_data(group843_in_data),
     .group843_out_valid(group843_in_valid),
     .group843_in_data(group843_out_data),
     .group843_in_valid(group843_out_valid),
     
-    .group853_out极(group853_in_data),
+    .group853_out_data(group853_in_data),
     .group853_out_valid(group853_in_valid),
     .group853_in_data(group853_out_data),
     .group853_in_valid(group853_out_valid),
