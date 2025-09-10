@@ -641,37 +641,858 @@ module noc_wrapper(
     .group831_in_data(group831_in_data),
     .group831_in_valid(group831_in_valid),
     
-    // ... (Connect all other ports similarly for groups 3-8)
+    // Spine 2 group ports
+    .group312_out_data(group312_in_data),
+    .group312_out_valid(group312_in_valid),
+    .group312_in_data(group312_out_data),
+    .group312_in_valid(group312_out_valid),
+    
+    .group322_out_data(group322_in_data),
+    .group322_out_valid(group322_in_valid),
+    .group322_in_data(group322_out_data),
+    .group322_in_valid(group322_out_valid),
+    
+    .group432_out_data(group432_out_data),
+    .group432_out_valid(group432_out_valid),
+    .group432_in_data(group432_in_data),
+    .group432_in_valid(group432_in_valid),
+    
+    .group532_out_data(group532_out_data),
+    .group532_out_valid(group532_out_valid),
+    .group532_in_data(group532_in_data),
+    .group532_in_valid(group532_in_valid),
+    
+    .group632_out_data(group632_out_data),
+    .group632_out_valid(group632_out_valid),
+    .group632_in_data(group632_in_data),
+    .group632_in_valid(group632_in_valid),
+    
+    .group732_out_data(group732_out_data),
+    .group732_out_valid(group732_out_valid),
+    .group732_in_data(group732_in_data),
+    .group732_in_valid(group732_in_valid),
+    
+    .group832_out_data(group832_out_data),
+    .group832_out_valid(group832_out_valid),
+    .group832_in_data(group832_in_data),
+    .group832_in_valid(group832_in_valid),
+    
+    // Spine 3 group ports
+    .group313_out_data(group313_in_data),
+    .group313_out_valid(group313_in_valid),
+    .group313_in_data(group313_out_data),
+    .group313_in_valid(group313_out_valid),
+    
+    .group323_out_data(group323_in_data),
+    .group323_out_valid(group323_in_valid),
+    .group323_in_data(group323_out_data),
+    .group323_in_valid(group323_out_valid),
+    
+    .group433_out_data(group433_out_data),
+    .group433_out_valid(group433_out_valid),
+    .group433_in_data(group433_in_data),
+    .group433_in_valid(group433_in_valid),
+    
+    .group533_out_data(group533_out_data),
+    .group533_out_valid(group533_out_valid),
+    .group533_in_data(group533_in_data),
+    .group533_in_valid(group533_in_valid),
+    
+    .group633_out_data(group633_out_data),
+    .group633_out_valid(group633_out_valid),
+    .group633_in_data(group633_in_data),
+    .group633_in_valid(group633_in_valid),
+    
+    .group733_out_data(group733_out_data),
+    .group733_out_valid(group733_out_valid),
+    .group733_in_data(group733_in_data),
+    .group733_in_valid(group733_in_valid),
+    
+    .group833_out_data(group833_out_data),
+    .group833_out_valid(group833_out_valid),
+    .group833_in_data(group833_in_data),
+    .group833_in_valid(group833_in_valid),
+    
+    // Spine 4 group ports
+    .group314_out_data(group314_in_data),
+    .group314_out_valid(group314_in_valid),
+    .group314_in_data(group314_out_data),
+    .group314_in_valid(group314_out_valid),
+    
+    .group324_out_data(group324_in_data),
+    .group324_out_valid(group324_in_valid),
+    .group324_in_data(group324_out_data),
+    .group324_in_valid(group324_out_valid),
+    
+    .group434_out_data(group434_out_data),
+    .group434_out_valid(group434_out_valid),
+    .group434_in_data(group434_in_data),
+    .group434_in_valid(group434_in_valid),
+    
+极 group534_out_data(group534_out_data),
+    .group534_out_valid(group534_out_valid),
+    .group534_in_data(group534_in_data),
+    .group534_in_valid(group534_in_valid),
+    
+    .group634_out_data(group634_out_data),
+    .group634_out_valid(group634_out_valid),
+    .group634_in_data(group634_in_data),
+    .group634_in_valid(group634_in_valid),
+    
+    .group734_out_data(group734_out_data),
+    .group734_out_valid(group734_out_valid),
+    .group734_in_data(group734_in_data),
+    .group734_in_valid(group734_in_valid),
+    
+    .group834_out_data(group834_out_data),
+    .group834_out_valid(group834_out_valid),
+   极 group834_in_data(group834_in_data),
+    .group834_in_valid(group834_in_valid)
   );
 
   group4 g4 (
     .ACLK(ACLK),
     .ARESETn(ARESETn),
-    // ... (Connect all ports)
+    
+    // Spine 1 group ports
+    .group411_out_data(group411_in_data),
+    .group411_out_valid(group411_in_valid),
+    .group411_in_data(group411_out_data),
+    .group411_in_valid(group411_out_valid),
+    
+    .group421_out_data(group421_in_data),
+    .group421_out_valid(group421_in_valid),
+    .group421_in_data(group421_out_data),
+    .group421_in_valid(group421_out_valid),
+    
+    .group431_out_data(group431_in_data),
+    .group431_out_valid(group431_in_valid),
+    .group431_in_data(group431_out_data),
+    .group431_in_valid(group431_out_valid),
+    
+    .group541_out_data(group541_out_data),
+    .group541_out_valid(group541_out_valid),
+    .group541_in_data(group541_in_data),
+    .group541_in_valid(group541_in_valid),
+    
+    .group641_out_data(group641_out_data),
+    .group641_out_valid(group641_out_valid),
+    .group641_in_data(group641_in_data),
+    .group641_in_valid(group641_in_valid),
+    
+    .group741_out_data(group741_out_data),
+    .group741_out_valid(group741_out_valid),
+    .group741_in_data(group741_in_data),
+    .group741_in_valid(group741_in_valid),
+    
+    .group841_out_data(group841_out_data),
+    .group841_out_valid(group841_out_valid),
+    .group841_in_data(group841_in_data),
+    .group841_in_valid(group841_in_valid),
+    
+    // Spine 2 group ports
+    .group412_out_data(group412_in_data),
+    .group412_out_valid(group412_in_valid),
+    .group412_in_data(group412_out_data),
+    .group412_in_valid(group412_out_valid),
+    
+    .group422_out_data(group422_in_data),
+    .group422_out_valid(group422_in_valid),
+    .group422_in_data(group422_out_data),
+    .group422_in_valid(group422_out_valid),
+    
+    .group432_out_data(group432_in_data),
+    .group432_out_valid(group432_in_valid),
+    .group432_in_data(group432_out_data),
+    .极 group432_in_valid(group432_out_valid),
+    
+    .group542_out_data(group542_out_data),
+    .group542_out_valid(group542_out_valid),
+    .group542极_data(group542_in_data),
+    .group542_in_valid(group542_in_valid),
+    
+    .group642_out_data(group642_out_data),
+    .group642_out_valid(group642_out_valid),
+    .group642_in_data(group642_in_data),
+    .group642_in_valid(group642_in_valid),
+    
+    .group742_out_data(group742_out_data),
+    .group742_out_valid(group742_out_valid),
+    .group742_in_data(group742极_data),
+    .group742_in_valid(group742_in_valid),
+    
+    .group842_out_data(group842_out_data),
+    .group842_out_valid(group842_out_valid),
+    .group842_in_data(group842_in_data),
+    .group842_in_valid(group842_in_valid),
+    
+    // Spine 3 group ports
+    .group413_out_data(group413_in_data),
+    .group413_out_valid(group413_in_valid),
+    .group413_in_data(group413_out_data),
+    .group413_in_valid(group413_out_valid),
+    
+    .group423_out_data(group423_in_data),
+    .group423_out_valid(group423_in_valid),
+    .group423_in_data(group423_out_data),
+    .group423_in_valid(group423_out_valid),
+    
+    .group433_out_data(group433_in_data),
+    .group433_out_valid(group433_in_valid),
+    .group433_in_data(group433_out_data),
+    .group433_in_valid(group433_out_valid),
+    
+    .group543_out_data(group543_out_data),
+    .group543_out_valid(group543_out_valid),
+    .group543_in_data(group543_in_data),
+    .group543_in_valid(group543_in_valid),
+    
+    .group643_out_data(group643_out_data),
+    .group643_out_valid(group643_out_valid),
+    .group643_in_data(group643_in_data),
+    .group643_in_valid(group643_in_valid),
+    
+    .group743_out_data(group743_out_data),
+    .group743_out_valid(group743_out_valid),
+    .group743_in_data(group743_in_data),
+    .group743_in_valid(group743_in_valid),
+    
+    .group843_out_data(group843_out_data),
+    .group843_out_valid(group843_out_valid),
+    .group843_in_data(group843_in_data),
+    .group843_in_valid(group843_in_valid),
+    
+    // Spine 4 group ports
+    .group414_out_data(group414_in_data),
+    .极 group414_out_valid(group414_in_valid),
+    .group414_in_data(group414_out_data),
+    .group414_in_valid(group414_out_valid),
+    
+    .group424_out_data(group424_in_data),
+    .group424_out_valid(group424_in_valid),
+    .group424_in_data(group424_out_data),
+    .group424_in_valid(group424_out_valid),
+    
+    .group434_out_data(group434_in_data),
+    .group434_out_valid(group434_in_valid),
+    .group434_in_data(group434_out_data),
+    .group434_in_valid(group434_out_valid),
+    
+    .group544_out_data(group544_out_data),
+    .group544_out_valid(group544_out_valid),
+    .group544_in_data(group544_in_data),
+    .group544_in_valid(group544极_valid),
+    
+    .group644_out_data(group644_out_data),
+    .group644_out_valid(group644_out_valid),
+    .group644_in_data(group644_in_data),
+    .group644_in_valid(group644_in_valid),
+    
+    .group744_out_data(group744_out_data),
+    .group744_out_valid(group744_out_valid),
+    .group744_in_data(group744_in_data),
+    .group744_in_valid(group744_in_valid),
+    
+    .group844_out_data(group844_out_data),
+    .group844_out_valid(group844_out_valid),
+    .group844_in_data(group844_in_data),
+    .group844_in_valid(group844_in_valid)
   );
 
   group5 g5 (
     .ACLK(ACLK),
     .ARESETn(ARESETn),
-    // ... (Connect all ports)
+    
+    // Spine 1 group ports
+    .group511_out_data(group511_in_data),
+    .group511_out_valid(group511_in_valid),
+    .group511_in_data(group511_out_data),
+    .group511_in_valid(group511_out_valid),
+    
+    .group521_out_data(group521_in_data),
+    .group521_out_valid(group521_in_valid),
+    .group521极_data(group521_out_data),
+    .group521_in_valid(group521_out_valid),
+    
+    .group531_out_data(group531_in_data),
+    .group531_out_valid(group531_in_valid),
+    .group531_in_data(group531_out_data),
+    .group531_in_valid(group531_out_valid),
+    
+    .group541_out_data(group541_in_data),
+    .group541_out_valid(group541_in_valid),
+    .group541_in_data(group541_out_data),
+    .group541_in_valid(group541_out_valid),
+    
+    .group651_out_data(group651_out_data),
+    .group651_out_valid(group651_out_valid),
+    .group651_in_data(group651_in_data),
+    .group651_in_valid(group651_in_valid),
+    
+    .group751_out_data(group751_out_data),
+    .group751_out_valid(group751_out_valid),
+    .group751_in_data(group751_in_data),
+    .group751_in_valid(group751_in_valid),
+    
+    .group851_out_data(group851_out_data),
+    .group851_out_valid(group851_out_valid),
+    .group851_in_data(group851_in_data),
+    .group851_in_valid(group851_in_valid),
+    
+    // Spine 2 group ports
+    .group512_out_data(group512_in_data),
+    .group512_out_valid(group512_in_valid),
+    .group512_in_data(group512_out_data),
+    .group512_in_valid(group512_out_valid),
+    
+    .group522_out_data(group522_in_data),
+    .group522_out_valid(group522_in_valid),
+    .group522_in_data(group522_out_data),
+    .group522_in_valid(group522_out_valid),
+    
+    .group532_out_data(group532_in_data),
+    .group532_out_valid(group532_in_valid),
+    .group532_in_data(group532_out_data),
+    .group532_in_valid(group532_out_valid),
+    
+    .group542_out_data(group542_in_data),
+    .group542_out_valid(group542_in_valid),
+    .group542_in_data(group542_out_data),
+    .group542_in_valid(group542_out_valid),
+    
+    .group652_out_data(group652_out_data),
+    .group652_out_valid(group652_out_valid),
+    .group652_in_data(group652_in_data),
+    .group652_in_valid(group652_in_valid),
+    
+    .group752_out_data(group752_out_data),
+    .group752_out_valid(group752_out_valid),
+    .group752_in_data(group752_in_data),
+    .group752_in_valid(group752_in_valid),
+    
+    .group852_out_data(group852_out_data),
+    .group852_out_valid(group852_out_valid),
+    .group852极_data(group852_in_data),
+    .group852_in_valid(group852_in_valid),
+    
+    // Spine 3 group ports
+    .group513_out_data(group513_in_data),
+    .group513_out_valid(group513_in_valid),
+    .group513_in_data(group513_out_data),
+    .group513_in_valid(group513_out_valid),
+    
+    .group523_out_data(group523_in_data),
+    .group523_out_valid(group523_in_valid),
+    .group523_in_data(group523_out_data),
+    .group523_in_valid(group523_out_valid),
+    
+    .group533_out_data(group533_in_data),
+    .group533_out_valid(group533_in_valid),
+    .group533_in_data(group533_out_data),
+    .group533_in_valid(group533_out_valid),
+    
+    .group543_out_data(group543_in_data),
+    .group543_out_valid(group543_in_valid),
+    .group543_in_data(group543_out_data),
+    .group543_in_valid(group543_out_valid),
+    
+    .group653_out_data(group653_out_data),
+    .group653_out_valid(group653_out_valid),
+    .group653_in_data(group653_in_data),
+    .group653_in_valid(group653_in_valid),
+    
+    .group753_out_data(group753_out_data),
+    .group753_out_valid(group753_out_valid),
+    .group753_in_data(group753_in_data),
+    .group753_in_valid(group753_in_valid),
+    
+    .group853_out_data(group853_out_data),
+    .group853_out_valid(group853_out_valid),
+    .group853_in_data(group853_in_data),
+    .group853_in_valid(group853_in_valid),
+    
+    // Spine 4 group ports
+    .group514_out_data(group514_in_data),
+    .group514_out_valid(group514_in_valid),
+    .group514_in_data(group514_out_data),
+    .group514_in_valid(group514_out_valid),
+    
+    .group524_out_data(group524_in_data),
+    .group524_out_valid(group524极_valid),
+    .group524_in_data(group524_out_data),
+    .group524_in_valid(group524_out_valid),
+    
+    .group534_out_data(group534_in_data),
+    .group534_out_valid(group534_in_valid),
+    .group534_in_data(group534_out_data),
+    .group534_in_valid(group534_out_valid),
+    
+    .group544_out_data(group544_in_data),
+    .group544_out_valid(group544_in_valid),
+    .group544_in_data(group544_out_data),
+    .group544_in_valid(group544_out_valid),
+    
+    .group654_out_data(group654_out_data),
+    .group654_out_valid(group654_out_valid),
+    .group654_in_data(group654_in_data),
+    .group654_in_valid(group654_in_valid),
+    
+    .group754_out_data(group754_out_data),
+    .group754_out_valid(group754_out_valid),
+    .group754_in_data(group754_in_data),
+    .group754_in_valid(group754_in_valid),
+    
+    .group854_out_data(group854_out_data),
+    .group854_out_valid(group854_out_valid),
+    .group854_in_data(group854_in_data),
+    .group854_in_valid(group854_in_valid)
   );
 
   group6 g6 (
     .ACLK(ACLK),
     .ARESETn(ARESETn),
-    // ... (Connect all ports)
+    
+    // Spine 1 group ports
+    .group611_out_data(group611_in_data),
+    .group611_out_valid(group611_in_valid),
+    .group611_in_data(group611_out_data),
+    .group611_in_valid(group611_out_valid),
+    
+    .group621_out_data(group621_in_data),
+    .group621_out_valid(group621_in_valid),
+    .group621_in_data(group621_out_data),
+    .group621_in_valid(group621_out_valid),
+    
+    .group631_out_data(group631_in_data),
+    .group631_out_valid(group631_in_valid),
+    .group631_in_data(group631_out_data),
+    .group631_in_valid(group631_out_valid),
+    
+    .group641_out_data(group641_in_data),
+    .group641_out_valid(group641_in_valid),
+    .group641_in_data(group641_out_data),
+    .group641_in_valid(group641_out_valid),
+    
+    .group651_out_data(group651_in_data),
+    .group651_out_valid(group651_in_valid),
+    .group651_in_data(group651_out_data),
+    .group651_in_valid(group极_out_valid),
+    
+    .group761_out_data(group761_out_data),
+    .group761_out_valid(group761_out_valid),
+    .group761_in_data(group761_in_data),
+    .group761_in_valid(group761_in_valid),
+    
+    .group861_out_data(group861_out_data),
+    .group861_out_valid(group861_out_valid),
+    .group861_in_data(group861_in_data),
+    .group861_in_valid(group861_in_valid),
+    
+    // Spine 2 group ports
+    .group612_out_data(group612_in_data),
+    .group612_out_valid(group612_in_valid),
+    .group612_in_data(group612_out_data),
+    .group612极_valid(group612_out_valid),
+    
+    .group622_out_data(group622_in_data),
+    .group622_out_valid(group622_in_valid),
+    .group622_in_data(group622_out_data),
+    .group622_in_valid(group622_out_valid),
+    
+    .group632_out_data(group极_in_data),
+    .group632_out_valid(group632_in_valid),
+    .group632_in_data(group632_out_data),
+    .group632_in_valid(group632_out_valid),
+    
+    .group642_out_data(group642_in_data),
+    .group642_out_valid(group642_in_valid),
+    .group642_in_data(group642_out_data),
+    .group642_in_valid(group642_out_valid),
+    
+    .group652_out_data(group652_in_data),
+    .group652_out_valid(group652_in_valid),
+    .group652_in_data(group652_out_data),
+    .group652_in_valid(group652_out_valid),
+    
+    .group762_out_data(group762_out_data),
+    .group762_out_valid(group762_out_valid),
+    .group762_in_data(group762_in_data),
+    .group762_in_valid(group762_in_valid),
+    
+    .group862_out_data(group862_out_data),
+    .group862_out_valid(group862_out_valid),
+    .group862_in_data(group862_in_data),
+    .group862_in_valid(group862_in_valid),
+    
+    // Spine 3 group ports
+    .group613_out_data(group613_in_data),
+    .group613_out_valid(group613_in_valid),
+    .group613_in_data(group613_out_data),
+    .group613_in_valid(group613_out_valid),
+    
+    .group623_out_data(group623_in_data),
+    .group623_out_valid(group623_in_valid),
+    .group623_in_data(group623_out_data),
+    .group623_in_valid(group623_out_valid),
+    
+    .group633_out_data(group633_in_data),
+    .group633_out_valid(group633_in_valid),
+    .group633_in_data(group633_out_data),
+    .group633_in_valid(group633_out_valid),
+    
+    .group643_out_data(group643_in_data),
+    .group643_out_valid(group643_in_valid),
+    .group643极_data(group643_out_data),
+    .group643_in_valid(group643_out_valid),
+    
+    .group653_out_data(group653_in_data),
+    .group653_out_valid(group653_in_valid),
+    .group653_in_data(group653_out_data),
+    .group653_in_valid(group653_out_valid),
+    
+    .group763_out_data(group763_out_data),
+    .group763_out_valid(group763_out_valid),
+    .group763_in_data(group763_in_data),
+    .group763_in_valid(group763_in_valid),
+    
+    .group863_out_data(group863_out_data),
+    .group863_out_valid(group863_out_valid),
+    .group863_in_data(group863_in_data),
+    .group863_in_valid(group863_in_valid),
+    
+    // Spine 4 group ports
+    .group614_out_data(group614_in_data),
+    .group614_out_valid(group614_in_valid),
+    .group614_in_data(group614_out_data),
+    .group614_in_valid(group614_out_valid),
+    
+    .group624_out_data(group624_in_data),
+    .group624_out_valid(group624_in_valid),
+    .group624_in_data(group624_out_data),
+    .group624_in_valid(group624_out_valid),
+    
+    .group634_out_data(group634_in_data),
+    .group634_out_valid(group634_in_valid),
+    .group634_in_data(group极_out_data),
+    .group634_in_valid(group634_out_valid),
+    
+    .group644_out_data(group644_in_data),
+    .group644_out_valid(group644_in_valid),
+    .group644_in_data(group644_out_data),
+    .group644_in_valid(group644_out_valid),
+    
+    .group654_out_data(group654_in_data),
+    .group654_out_valid(group654_in_valid),
+    .group654_in_data(group654_out极),
+    .group654_in_valid(group654_out_valid),
+    
+    .group764_out_data(group764_out_data),
+    .group764_out_valid(group764_out_valid),
+    .group764_in_data(group764_in_data),
+    .group764_in_valid(group764_in_valid),
+    
+    .group864_out_data(group864_out_data),
+    .group864_out_valid(group864_out_valid),
+    .group864_in_data(group864_in_data),
+    .group864_in_valid(group864_in_valid)
   );
 
   group7 g7 (
     .ACLK(ACLK),
     .ARESETn(ARESETn),
-    // ... (Connect all ports)
+    
+    // Spine 1 group ports
+    .group711_out_data(group711_in_data),
+    .group711_out_valid(group711_in_valid),
+    .group711_in_data(group711_out_data),
+    .group711_in_valid(group711_out_valid),
+    
+    .group721_out_data(group721_in_data),
+    .group721_out_valid(group721_in_valid),
+    .group721_in_data(group721_out_data),
+    .group721_in_valid(group721_out_valid),
+    
+    .group731_out_data(group731_in_data),
+    .group731_out_valid(group731_in_valid),
+    .group731_in_data(group731_out_data),
+    .group731_in_valid(group731_out_valid),
+    
+    .group741_out_data(group741_in_data),
+    .group741_out_valid(group741_in_valid),
+    .group741_in_data(group741_out_data),
+    .group741_in_valid(group741_out_valid),
+    
+    .group751_out_data(group751_in_data),
+    .group751_out_valid(group751_in_valid),
+    .group751_in_data(group751_out_data),
+    .group751_in_valid(group751_out_valid),
+    
+    .group761_out_data(group761_in_data),
+    .group761_out_valid(group761_in_valid),
+    .group761_in_data(group761_out_data),
+    .group761_in_valid(group761_out_valid),
+    
+    .group871_out_data(group871_out_data),
+    .group871_out_valid(group871_out_valid),
+    .group871_in_data(group871_in_data),
+    .group871_in_valid(group871_in_valid),
+    
+    // Spine 2 group ports
+    .group712_out_data(group712_in_data),
+    .group712_out_valid(group712极_valid),
+    .group712_in_data(group712_out_data),
+    .group712_in_valid(group712_out_valid),
+    
+    .group722_out_data(group722_in_data),
+    .group722_out_valid(group722_in_valid),
+    .group722_in_data(group722_out_data),
+    .group722_in_valid(group722_out_valid),
+    
+    .group732_out_data(group732_in_data),
+    .group732_out_valid(group732_in_valid),
+    .group732_in_data(group732_out_data),
+    .group732_in_valid(group732_out_valid),
+    
+    .group742_out_data(group742_in_data),
+    .group742_out_valid(group742_in_valid),
+    .group742_in_data(group742_out_data),
+    .group742_in_valid(group742_out_valid),
+    
+    .group752_out_data(group752_in_data),
+    .group752_out_valid(group752_in_valid),
+    .group752_in_data(group752_out_data),
+    .group752_in_valid(group752_out_valid),
+    
+    .group762_out_data(group762_in_data),
+    .group762_out_valid(group762_in_valid),
+    .group762_in_data(group762_out_data),
+    .group762_in_valid(group762_out_valid),
+    
+    .group872_out_data(group872_out_data),
+    .group872_out_valid(group872_out_valid),
+    .group872_in_data(group872_in_data),
+    .group872_in_valid(group872_in_valid),
+    
+    // Spine 3 group ports
+    .group713_out_data(group713_in_data),
+    .group713_out_valid(group713_in_valid),
+    .group713极_data(group713_out_data),
+    .group713_in_valid(group713_out_valid),
+    
+    .group723_out_data(group723_in_data),
+    .group723_out_valid(group723_in_valid),
+    .极 group723_in_data(group723_out_data),
+    .group723_in_valid(group723_out_valid),
+    
+    .group733_out_data(group733_in_data),
+    .group733_out_valid(group733_in_valid),
+    .group733_in_data(group733_out_data),
+    .group733_in_valid(group733_out_valid),
+    
+    .group743_out_data(group743_in_data),
+    .group743_out_valid(group743_in_valid),
+    .group743_in_data(group743_out_data),
+    .group743_in_valid(group743_out_valid),
+    
+    .group753_out_data(group753_in_data),
+    .group753_out_valid(group753_in_valid),
+    .group753_in_data(group753_out_data),
+    .group753_in_valid(group753_out_valid),
+    
+    .group763_out_data(group763_in_data),
+    .group763_out_valid(group763_in_valid),
+    .group763_in_data(group763_out_data),
+    .group763_in_valid(group763_out_valid),
+    
+    .group873_out_data(group873_out极),
+    .group873_out_valid(group873_out_valid),
+    .group873_in_data(group873_in_data),
+    .group873_in_valid(group873_in_valid),
+    
+    // Spine 4 group ports
+    .group714_out_data(group714_in_data),
+    .group714_out_valid(group714_in_valid),
+    .group714_in_data(group714_out_data),
+    .group714_in_valid(group714_out_valid),
+    
+    .group724_out_data(group724_in_data),
+    .group724_out_valid(group724_in_valid),
+    .group724_in_data(group724_out_data),
+    .group724_in_valid(group724_out_valid),
+    
+    .group734_out_data(group734_in_data),
+    .group734_out_valid(group734_in_valid),
+    .group734_in_data(group734_out_data),
+    .group734_in_valid(group734_out_valid),
+    
+    .group744_out_data(group744_in_data),
+    .group744_out_valid(group744_in_valid),
+    .group744_in_data(group744_out_data),
+    .group744_in_valid(group744_out_valid),
+    
+    .group754_out_data(group754_in_data),
+    .group754_out_valid(group754_in_valid),
+    .group754_in_data(group754_out_data),
+    .group754_in_valid(group754_out_valid),
+    
+    .group764_out_data(group764_in_data),
+    .group764_out_valid(group764_in_valid),
+    .group764_in_data(group764_out_data),
+    .group764_in_valid(group764_out_valid),
+    
+    .group874_out_data(group874_out_data),
+    .group874_out_valid(group874_out_valid),
+    .group874_in_data(group874_in_data),
+    .group874_in_valid(group874_in_valid)
   );
 
   group8 g8 (
     .ACLK(ACLK),
     .ARESETn(ARESETn),
-    // ... (Connect all ports)
+    
+    // Spine 1 group ports
+    .group811_out_data(group811_in_data),
+    .group811_out_valid(group811_in_valid),
+    .group811_in_data(group811_out_data),
+    .group811_in_valid(group811_out_valid),
+    
+    .group821_out_data(group821_in_data),
+    .group821_out_valid(group821_in_valid),
+    .group821_in_data(group821_out_data),
+    .group821_in_valid(group821_out_valid),
+    
+    .group831_out_data(group831_in_data),
+    .group831_out_valid(group831_in_valid),
+    .group831_in_data(group831_out_data),
+    .group831_in_valid(group831_out_valid),
+    
+    .group841_out_data(group841_in_data),
+    .group841_out_valid(group841_in_valid),
+    .group841_in_data(group841_out_data),
+    .group841_in_valid(group841_out_valid),
+    
+    .group851_out_data(group851_in_data),
+    .group851_out_valid(group851_in_valid),
+    .group851_in_data(group851_out_data),
+    .group851_in_valid(group851_out_valid),
+    
+    .group861_out_data(group861_in_data),
+    .group861_out_valid(group861_in_valid),
+    .group861_in_data(group861_out_data),
+    .group861_in_valid(group861_out_valid),
+    
+    .group871_out_data(group871_in_data),
+    .group871_out_valid(group871_in_valid),
+    .group871_in_data(group871_out_data),
+    .group871_in_valid(group871_out_valid),
+    
+    // Spine 2 group ports
+    .group812_out_data(group812_in_data),
+    .group812_out_valid(group812_in_valid),
+    .group812_in_data(group812_out_data),
+    .group812_in_valid(group812_out_valid),
+    
+    .group822_out_data(group822_in_data),
+    .group822_out_valid(group822_in_valid),
+    .group822极_data(group822_out_data),
+    .group822_in_valid(group822_out_valid),
+    
+    .group832_out_data(group832_in_data),
+    .group832_out_valid(group832_in_valid),
+    .group832_in_data(group832_out_data),
+    .group832_in_valid(group832_out_valid),
+    
+    .group842_out_data(group842_in_data),
+    .group842_out_valid(group842_in_valid),
+    .group842_in_data(group842_out_data),
+    .group842_in_valid(group842_out_valid),
+    
+    .group852_out_data(group852_in_data),
+    .group852_out_valid(group852_in_valid),
+    .group852_in_data(group852_out_data),
+    .group852_in_valid(group852_out_valid),
+    
+    .group862_out_data(group862_in_data),
+    .group862_out_valid(group862_in_valid),
+    .group862_in_data(group862_out_data),
+    .group862_in_valid(group862_out_valid),
+    
+    .group872_out_data(group872_in_data),
+    .group872_out_valid(group872_in_valid),
+    .group872_in_data(group872_out_data),
+    .group872_in_valid(group872_out_valid),
+    
+    // Spine 3 group ports
+    .group813_out_data(group813_in_data),
+    .group813_out_valid(group813_in_valid),
+    .group813_in_data(group813_out_data),
+    .group813_in_valid(group813_out_valid),
+    
+    .group823_out_data(group823_in_data),
+    .group823_out_valid(group823_in_valid),
+    .group823_in_data(group823_out_data),
+    .group823_in_valid(group823_out_valid),
+    
+    .group833_out_data(group833_in_data),
+    .group833_out_valid(group833_in_valid),
+    .group833_in_data(group833_out_data),
+    .group833极_valid(group833_out_valid),
+    
+    .group843_out_data(group843_in_data),
+    .group843_out_valid(group843_in_valid),
+    .group843_in_data(group843_out_data),
+    .group843_in_valid(group843_out_valid),
+    
+    .group853_out极(group853_in_data),
+    .group853_out_valid(group853_in_valid),
+    .group853_in_data(group853_out_data),
+    .group853_in_valid(group853_out_valid),
+    
+    .group863_out_data(group863_in_data),
+    .group863_out_valid(group863_in_valid),
+    .group863_in_data(group863_out_data),
+    .group863_in_valid(group863_out_valid),
+    
+    .group873_out_data(group873_in_data),
+    .group873_out_valid(group873_in_valid),
+    .group873_in_data(group873_out_data),
+    .group873_in_valid(group873_out_valid),
+    
+    // Spine 4 group ports
+    .group814_out_data(group814_in_data),
+    .group814_out_valid(group814_in_valid),
+    .group814_in_data(group814_out_data),
+    .group814_in_valid(group814_out_valid),
+    
+    .group824_out_data(group824_in_data),
+    .group824_out_valid(group824_in_valid),
+    .group824_in_data(group824_out_data),
+    .group824_in_valid(group824_out_valid),
+    
+    .group834_out_data(group834_in_data),
+    .group834_out_valid(group834_in_valid),
+    .group834_in_data(group834_out_data),
+    .group834_in_valid(group834_out_valid),
+    
+    .group844_out_data(group844_in_data),
+    .group844_out_valid(group844_in_valid),
+    .group844_in_data(group844_out_data),
+    .group844_in_valid(group844_out_valid),
+    
+    .group854_out_data(group854_in_data),
+    .group854_out_valid(group854_in_valid),
+    .group854_in_data(group854_out_data),
+    .group854_in_valid(group854_out_valid),
+    
+    .group864_out_data(group864_in_data),
+    .group864_out_valid(group864_in_valid),
+    .group864_in_data(group864_out_data),
+    .group864_in_valid(group864_out_valid),
+    
+    .group874_out_data(group874_in_data),
+    .group874_out_valid(group874_in_valid),
+    .group874_in_data(group874_out_data),
+    .group874_in_valid(group874_out_valid)
   );
 
 endmodule
